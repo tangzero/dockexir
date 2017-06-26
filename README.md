@@ -1,4 +1,4 @@
-# Dockexir [![Build Status](https://travis-ci.org/tangzero/dockexir.svg?branch=master)](https://travis-ci.org/tangzero/dockexir)
+# Dockexir [![Build Status](https://travis-ci.org/tangzero/dockexir.svg?branch=master)](https://travis-ci.org/tangzero/dockexir) [![Coverage Status](https://coveralls.io/repos/github/tangzero/dockexir/badge.svg?branch=master)](https://coveralls.io/github/tangzero/dockexir?branch=master)
 
 **TODO: Add description**
 
