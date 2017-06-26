@@ -1,4 +1,4 @@
-# Dockexir
+# Dockexir [![Build Status](https://travis-ci.org/tangzero/dockexir.svg?branch=master)](https://travis-ci.org/tangzero/dockexir)
 
 **TODO: Add description**
 
