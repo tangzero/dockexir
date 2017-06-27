@@ -20,7 +20,6 @@ defmodule Dockexir.Mixfile do
   defp deps do
     [{:hackney, "~> 1.8"},
      {:poison, "~> 3.1"},
-     {:ok, "~> 1.6"},
      {:mock, "~> 0.2.0", only: :test},
      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
      {:mix_test_watch, "~> 0.3", only: :dev, runtime: false},
