@@ -30,5 +30,5 @@ use Mix.Config
 #     import_config "#{Mix.env}.exs"
 
 if Mix.env == :dev do
-  config :mix_test_watch, tasks: ["test", "credo", "coveralls.detail"], clear: true
+  config :mix_test_watch, tasks: ["test --cover", "credo"], clear: true
 end

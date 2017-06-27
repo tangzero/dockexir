@@ -30,10 +30,17 @@ defmodule Dockexir.HTTP do
     request = {method, path, [{:host, :localhost}], body}
     case :hackney.send_request(conn, request) do
       {:ok, code, headers, body} ->
-        case :hackney.body(body) do
-          {:ok, body} -> {:ok, code, headers, body}
+        case parse_body(body) do
+          {:ok, data} -> {:ok, code, headers, data}
           {:error, reason} -> {:error, reason}
         end
+      {:error, reason} -> {:error, reason}
+    end
+  end
+
+  defp parse_body(body) do
+    case :hackney.body(body) do
+      {:ok, content} -> Poison.decode(content)
       {:error, reason} -> {:error, reason}
     end
   end

@@ -1,4 +1,4 @@
-defmodule DockexirHTTPTest do
+defmodule Dockexir.HTTPTest do
   use ExUnit.Case
   import Mock
   alias Dockexir.HTTP
